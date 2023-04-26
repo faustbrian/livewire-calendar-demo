@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e0d030e82fcbd7c6b728dd4680358081",
+    "content-hash": "a25d2aa7e994b66e2bdc9a4a802dc6b8",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -59,6 +59,150 @@
                 "source": "https://github.com/Bacon/BaconQrCode/tree/2.0.8"
             },
             "time": "2022-12-07T17:46:57+00:00"
+        },
+        {
+            "name": "bombenprodukt/laravel-package-powerpack",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BombenProdukt/laravel-package-powerpack.git",
+                "reference": "5f51307aeb07993e89a46e93f58d1e15adbd7587"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BombenProdukt/laravel-package-powerpack/zipball/5f51307aeb07993e89a46e93f58d1e15adbd7587",
+                "reference": "5f51307aeb07993e89a46e93f58d1e15adbd7587",
+                "shasum": ""
+            },
+            "require": {
+                "graham-campbell/analyzer": "^4.0",
+                "illuminate/contracts": "^10.0",
+                "nesbot/carbon": "^2.66",
+                "php": "^8.2",
+                "spatie/laravel-package-tools": "^1.14"
+            },
+            "require-dev": {
+                "bombenprodukt/php-cs-fixer-config": "^1.0",
+                "ergebnis/composer-normalize": "^2.30",
+                "friendsofphp/php-cs-fixer": "^3.16",
+                "mockery/mockery": "^1.5",
+                "nunomaduro/collision": "^7.0",
+                "nunomaduro/larastan": "^2.5",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "pestphp/pest-plugin-watch": "^2.0",
+                "phpstan/extension-installer": "^1.2",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3",
+                "spatie/laravel-ray": "^1.32"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/TestBench/helpers.php"
+                ],
+                "psr-4": {
+                    "BombenProdukt\\PackagePowerPack\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Faust",
+                    "email": "brian@bombenprodukt.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package to supercharge your packages with Laravel.",
+            "homepage": "https://github.com/BombenProdukt/laravel-package-powerpack",
+            "keywords": [
+                "BombenProdukt",
+                "laravel",
+                "laravel-package-powerpack"
+            ],
+            "support": {
+                "issues": "https://github.com/BombenProdukt/laravel-package-powerpack/issues",
+                "source": "https://github.com/BombenProdukt/laravel-package-powerpack/tree/1.0.0"
+            },
+            "time": "2023-04-26T01:06:19+00:00"
+        },
+        {
+            "name": "bombenprodukt/livewire-calendar",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/BombenProdukt/livewire-calendar.git",
+                "reference": "c365435cf5b2000bdb74b49e525b83c89e75a409"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/BombenProdukt/livewire-calendar/zipball/c365435cf5b2000bdb74b49e525b83c89e75a409",
+                "reference": "c365435cf5b2000bdb74b49e525b83c89e75a409",
+                "shasum": ""
+            },
+            "require": {
+                "bombenprodukt/laravel-package-powerpack": "^1.0",
+                "illuminate/contracts": "^10.0",
+                "livewire/livewire": "^2.12",
+                "nesbot/carbon": "^2.66",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "bombenprodukt/php-cs-fixer-config": "^1.0",
+                "ergebnis/composer-normalize": "^2.2",
+                "friendsofphp/php-cs-fixer": "^3.15",
+                "infection/infection": "^0.26.19",
+                "nunomaduro/collision": "^7.0",
+                "nunomaduro/larastan": "^2.0",
+                "orchestra/testbench": "^8.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "pestphp/pest-plugin-watch": "^2.0",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "spatie/laravel-ray": "^1.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BombenProdukt\\LivewireCalendar\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BombenProdukt\\LivewireCalendar\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brian Faust",
+                    "email": "brian@bombenprodukt.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A package to build calendars with Laravel Livewire.",
+            "homepage": "https://github.com/BombenProdukt/livewire-calendar",
+            "keywords": [
+                "BombenProdukt",
+                "laravel",
+                "livewire-calendar"
+            ],
+            "support": {
+                "issues": "https://github.com/BombenProdukt/livewire-calendar/issues",
+                "source": "https://github.com/BombenProdukt/livewire-calendar/tree/1.0.0"
+            },
+            "time": "2023-04-26T01:06:44+00:00"
         },
         {
             "name": "brick/math",
@@ -1330,16 +1474,16 @@
         },
         {
             "name": "laravel/fortify",
-            "version": "v1.17.0",
+            "version": "v1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/fortify.git",
-                "reference": "c38885644cd2c45b732258a9753de9f6f5cfadba"
+                "reference": "76908639d6c58a4996ce8bbacea9ec7f610b2ec6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/fortify/zipball/c38885644cd2c45b732258a9753de9f6f5cfadba",
-                "reference": "c38885644cd2c45b732258a9753de9f6f5cfadba",
+                "url": "https://api.github.com/repos/laravel/fortify/zipball/76908639d6c58a4996ce8bbacea9ec7f610b2ec6",
+                "reference": "76908639d6c58a4996ce8bbacea9ec7f610b2ec6",
                 "shasum": ""
             },
             "require": {
@@ -1390,20 +1534,20 @@
                 "issues": "https://github.com/laravel/fortify/issues",
                 "source": "https://github.com/laravel/fortify"
             },
-            "time": "2023-04-17T17:57:25+00:00"
+            "time": "2023-04-19T15:48:59+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v10.8.0",
+            "version": "v10.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "317d7ccaeb1bbf4ac3035efe225ef2746c45f3a8"
+                "reference": "35078125f61ef0b125edf524de934f108d4b47fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/317d7ccaeb1bbf4ac3035efe225ef2746c45f3a8",
-                "reference": "317d7ccaeb1bbf4ac3035efe225ef2746c45f3a8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/35078125f61ef0b125edf524de934f108d4b47fd",
+                "reference": "35078125f61ef0b125edf524de934f108d4b47fd",
                 "shasum": ""
             },
             "require": {
@@ -1590,20 +1734,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-04-18T13:45:33+00:00"
+            "time": "2023-04-25T13:47:18+00:00"
         },
         {
             "name": "laravel/jetstream",
-            "version": "v3.1.1",
+            "version": "v3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde"
+                "reference": "dfac46f3ff3ba9a3866ac343d6aee1cc398ff0b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
-                "reference": "4bedb125c742c3f8d43226d1ab0a9a27b8383cde",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/dfac46f3ff3ba9a3866ac343d6aee1cc398ff0b4",
+                "reference": "dfac46f3ff3ba9a3866ac343d6aee1cc398ff0b4",
                 "shasum": ""
             },
             "require": {
@@ -1659,20 +1803,20 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2023-04-10T14:04:50+00:00"
+            "time": "2023-04-21T15:56:37+00:00"
         },
         {
             "name": "laravel/sanctum",
-            "version": "v3.2.1",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "d09d69bac55708fcd4a3b305d760e673d888baf9"
+                "reference": "6281ce796d464592867f768eb890642aa1954bd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/d09d69bac55708fcd4a3b305d760e673d888baf9",
-                "reference": "d09d69bac55708fcd4a3b305d760e673d888baf9",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/6281ce796d464592867f768eb890642aa1954bd0",
+                "reference": "6281ce796d464592867f768eb890642aa1954bd0",
                 "shasum": ""
             },
             "require": {
@@ -1686,6 +1830,7 @@
             "require-dev": {
                 "mockery/mockery": "^1.0",
                 "orchestra/testbench": "^7.0|^8.0",
+                "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^9.3"
             },
             "type": "library",
@@ -1724,7 +1869,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2023-01-13T15:41:49+00:00"
+            "time": "2023-04-25T16:15:12+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -3120,16 +3265,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.20.2",
+            "version": "1.20.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "90490bd8fd8530a272043c4950c180b6d0cf5f81"
+                "reference": "6c04009f6cae6eda2f040745b6b846080ef069c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/90490bd8fd8530a272043c4950c180b6d0cf5f81",
-                "reference": "90490bd8fd8530a272043c4950c180b6d0cf5f81",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6c04009f6cae6eda2f040745b6b846080ef069c2",
+                "reference": "6c04009f6cae6eda2f040745b6b846080ef069c2",
                 "shasum": ""
             },
             "require": {
@@ -3159,9 +3304,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.2"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.3"
             },
-            "time": "2023-04-22T12:59:35+00:00"
+            "time": "2023-04-25T09:01:03+00:00"
         },
         {
             "name": "pragmarx/google2fa",
@@ -3214,150 +3359,6 @@
                 "source": "https://github.com/antonioribeiro/google2fa/tree/v8.0.1"
             },
             "time": "2022-06-13T21:57:56+00:00"
-        },
-        {
-            "name": "preemstudio/laravel-jetpack",
-            "version": "2.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PreemStudio/laravel-jetpack.git",
-                "reference": "58fe9aed8026b80417d8f3faf3fa7bfc5870b005"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PreemStudio/laravel-jetpack/zipball/58fe9aed8026b80417d8f3faf3fa7bfc5870b005",
-                "reference": "58fe9aed8026b80417d8f3faf3fa7bfc5870b005",
-                "shasum": ""
-            },
-            "require": {
-                "graham-campbell/analyzer": "^4.0",
-                "illuminate/contracts": "^10.0",
-                "nesbot/carbon": "^2.66",
-                "php": "^8.2",
-                "spatie/laravel-package-tools": "^1.14"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.30",
-                "friendsofphp/php-cs-fixer": "^3.16",
-                "mockery/mockery": "^1.5",
-                "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.5",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-watch": "^2.0",
-                "phpstan/extension-installer": "^1.2",
-                "phpstan/phpstan-deprecation-rules": "^1.1",
-                "phpstan/phpstan-phpunit": "^1.3",
-                "preemstudio/php-cs-fixer-config": "^1.3",
-                "spatie/laravel-ray": "^1.32"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/TestBench/helpers.php"
-                ],
-                "psr-4": {
-                    "PreemStudio\\Jetpack\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian Faust",
-                    "email": "brian@preem.studio",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A package to supercharge your packages with Laravel.",
-            "homepage": "https://github.com/PreemStudio/laravel-jetpack",
-            "keywords": [
-                "Preem Studio",
-                "laravel",
-                "laravel-jetpack"
-            ],
-            "support": {
-                "issues": "https://github.com/PreemStudio/laravel-jetpack/issues",
-                "source": "https://github.com/PreemStudio/laravel-jetpack/tree/2.0.2"
-            },
-            "time": "2023-04-20T02:49:42+00:00"
-        },
-        {
-            "name": "preemstudio/livewire-calendar",
-            "version": "1.0.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PreemStudio/livewire-calendar.git",
-                "reference": "a2ddb88e6f71b5818c681a5a3920d3b75818b42f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PreemStudio/livewire-calendar/zipball/a2ddb88e6f71b5818c681a5a3920d3b75818b42f",
-                "reference": "a2ddb88e6f71b5818c681a5a3920d3b75818b42f",
-                "shasum": ""
-            },
-            "require": {
-                "illuminate/contracts": "^10.0",
-                "livewire/livewire": "^2.12",
-                "nesbot/carbon": "^2.66",
-                "php": "^8.2",
-                "preemstudio/laravel-jetpack": "^2.0"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.2",
-                "friendsofphp/php-cs-fixer": "^3.15",
-                "infection/infection": "^0.26.19",
-                "nunomaduro/collision": "^7.0",
-                "nunomaduro/larastan": "^2.0",
-                "orchestra/testbench": "^8.0",
-                "pestphp/pest": "^2.0",
-                "pestphp/pest-plugin-laravel": "^2.0",
-                "pestphp/pest-plugin-watch": "^2.0",
-                "phpstan/extension-installer": "^1.1",
-                "phpstan/phpstan-deprecation-rules": "^1.0",
-                "phpstan/phpstan-phpunit": "^1.0",
-                "preemstudio/php-cs-fixer-config": "^1.3",
-                "spatie/laravel-ray": "^1.2"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "PreemStudio\\LivewireCalendar\\ServiceProvider"
-                    ]
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "PreemStudio\\LivewireCalendar\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brian Faust",
-                    "email": "brian@preem.studio",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A package to build calendars with Laravel Livewire.",
-            "homepage": "https://github.com/PreemStudio/livewire-calendar",
-            "keywords": [
-                "Preem Studio",
-                "laravel",
-                "livewire-calendar"
-            ],
-            "support": {
-                "issues": "https://github.com/PreemStudio/livewire-calendar/issues",
-                "source": "https://github.com/PreemStudio/livewire-calendar/tree/1.0.7"
-            },
-            "time": "2023-04-23T03:01:02+00:00"
         },
         {
             "name": "psr/container",
@@ -4109,16 +4110,16 @@
         },
         {
             "name": "spatie/laravel-package-tools",
-            "version": "1.14.2",
+            "version": "1.14.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-package-tools.git",
-                "reference": "bab62023a4745a61170ad5424184533685e73c2d"
+                "reference": "42737fa494578e539eeba59c27a6e23ea8ddda4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/bab62023a4745a61170ad5424184533685e73c2d",
-                "reference": "bab62023a4745a61170ad5424184533685e73c2d",
+                "url": "https://api.github.com/repos/spatie/laravel-package-tools/zipball/42737fa494578e539eeba59c27a6e23ea8ddda4d",
+                "reference": "42737fa494578e539eeba59c27a6e23ea8ddda4d",
                 "shasum": ""
             },
             "require": {
@@ -4157,7 +4158,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-package-tools/issues",
-                "source": "https://github.com/spatie/laravel-package-tools/tree/1.14.2"
+                "source": "https://github.com/spatie/laravel-package-tools/tree/1.14.3"
             },
             "funding": [
                 {
@@ -4165,7 +4166,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-03-14T16:41:21+00:00"
+            "time": "2023-04-25T14:17:59+00:00"
         },
         {
             "name": "symfony/console",
@@ -7087,16 +7088,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.9.0",
+            "version": "v1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "eac5ec3d6b5c96543c682e309a10fdddc9f61d80"
+                "reference": "c7a01fa9bdd79819e7a2f1ba63ac1b02e6692dbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/eac5ec3d6b5c96543c682e309a10fdddc9f61d80",
-                "reference": "eac5ec3d6b5c96543c682e309a10fdddc9f61d80",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/c7a01fa9bdd79819e7a2f1ba63ac1b02e6692dbc",
+                "reference": "c7a01fa9bdd79819e7a2f1ba63ac1b02e6692dbc",
                 "shasum": ""
             },
             "require": {
@@ -7149,20 +7150,20 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2023-04-18T14:50:44+00:00"
+            "time": "2023-04-25T14:52:30+00:00"
         },
         {
             "name": "laravel/sail",
-            "version": "v1.21.4",
+            "version": "v1.21.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "5e59b4a57181020477e2b18943b27493638e3f89"
+                "reference": "27af207bb1c53faddcba34c7528b3e969f6a646d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/5e59b4a57181020477e2b18943b27493638e3f89",
-                "reference": "5e59b4a57181020477e2b18943b27493638e3f89",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/27af207bb1c53faddcba34c7528b3e969f6a646d",
+                "reference": "27af207bb1c53faddcba34c7528b3e969f6a646d",
                 "shasum": ""
             },
             "require": {
@@ -7214,7 +7215,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2023-03-30T12:28:55+00:00"
+            "time": "2023-04-24T13:29:38+00:00"
         },
         {
             "name": "mockery/mockery",
