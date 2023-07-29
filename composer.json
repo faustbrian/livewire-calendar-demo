@@ -24,6 +24,7 @@
         "pestphp/pest": "^2.0",
         "pestphp/pest-plugin-laravel": "^2.0",
         "pestphp/pest-plugin-watch": "^2.0",
+        "phpstan/phpstan-strict-rules": "^1.5",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
